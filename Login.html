@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="Login.css">
+    <script src="FunctAPI.js"></script>
+
+    <!-- <script>
+        let serverUrl = 'https://tasklist-minh.herokuapp.com';
+        var user = null;
+        var username = localStorage.getItem("jwt");
+        function showtoken (){
+            console.log(username);
+        }
+        const login = async () => {
+            let email = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            const response = await fetch(`${serverUrl}/auth/sign_in`,{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email,
+                    password
+                })
+            });
+            // await saveLogin(response);
+        }
+    </script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div id="login">
+            <div>Login</div>
+            <input id="email" type="text" placeholder="Enter email">
+            <input id="password" type="password" placeholder="Enter Password">
+            <!-- <input type="button" value='Login' onclick="login()" /> -->
+            <button id="logined" onclick="login()" onclick="window.location.href='Calendar.html'">Login</button>
+            <button onclick="window.location.href='Register.html'">Register</button>
+        </div>
+    </div>
+</body>
+
+</html>
