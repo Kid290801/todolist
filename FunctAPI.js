@@ -20,7 +20,7 @@ let serverUrl = 'https://tasklist-minh.herokuapp.com';
                 });
                 if (response.ok)
                     alert("registered");
-                    window.location.href='Login.html'                
+                    window.location.href='index.html'                
             }
 
             const fetchUsers = async () => {
